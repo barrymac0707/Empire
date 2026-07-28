@@ -34,6 +34,10 @@ html {
   background-color: #040b18;
   background: radial-gradient(circle at top left, var(--bg-mid), var(--bg-deep) 40%, var(--bg-bright) 100%);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 body {
@@ -44,6 +48,8 @@ body {
   color: var(--text);
   background: radial-gradient(circle at top left, var(--bg-mid), var(--bg-deep) 40%, var(--bg-bright) 100%);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
