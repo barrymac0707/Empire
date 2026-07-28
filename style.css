@@ -32,7 +32,7 @@ body {
 }
 
 html {
-  background: transparent;
+  background: radial-gradient(circle at top left, var(--bg-mid), var(--bg-deep) 40%, var(--bg-bright) 100%);
 }
 
 body {
