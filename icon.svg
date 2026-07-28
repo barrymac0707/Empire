@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="empireGradient" cx="20%" cy="20%">
+      <stop offset="0%" style="stop-color:#071327;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#040b18;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1f45;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#empireGradient)"/>
+  <text x="256" y="350" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="280" font-weight="bold" fill="#1e6bff" text-anchor="middle" dominant-baseline="central">E</text>
+</svg>
