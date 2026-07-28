@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#040B18" />
+    <title>Empire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+    <div class="background-glow glow-3"></div>
+
+    <div class="app-shell">
+      <main class="app-card" role="application" aria-label="Empire party game">
+        <section id="home-screen" class="screen active" aria-labelledby="home-title">
+          <div class="screen-card">
+            <div class="brand-block">
+              <p class="eyebrow">PARTY GAME</p>
+              <h1 id="home-title">Empire</h1>
+              <p class="intro-text">Simple to play. Impossible to predict.</p>
+              <p class="rules-copy">Go around the circle, guess who wrote each secret, and if you are right they join your empire. Keep going until one player is left.</p>
+            </div>
+
+            <form id="home-form" class="stack-form">
+              <button class="primary-btn" type="submit">Start Game</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="setup-screen" class="screen" aria-labelledby="setup-title">
+          <div class="screen-card">
+            <div class="top-copy">
+              <p class="eyebrow">SETUP</p>
+              <h2 id="setup-title">How many players?</h2>
+              <p class="intro-text">Choose the total number of players for this round. The more the merrier.</p>
+            </div>
+
+            <form id="setup-form" class="stack-form" novalidate>
+              <label class="field-label" for="player-count">Number of Players</label>
+              <input id="player-count" name="player-count" type="number" min="3" inputmode="numeric" placeholder="Enter a number" required />
+              <p id="setup-message" class="status-message" aria-live="polite"></p>
+              <button class="primary-btn" type="submit">Continue</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="entry-screen" class="screen" aria-labelledby="entry-title">
+          <div class="screen-card">
+            <div class="top-copy">
+              <p id="entry-progress" class="eyebrow">Player 1 of 1</p>
+              <h2 id="entry-title">Enter your secret name</h2>
+              <p class="intro-text">Share something only you know and keep it hidden from the others.</p>
+            </div>
+
+            <form id="entry-form" class="stack-form" novalidate>
+              <p class="rules-copy">Choose a secret that is memorable but not so obvious that you would instantly give yourself away.</p>
+              <input id="secret-input" name="secret" type="text" maxlength="80" placeholder="Enter your secret name" autocomplete="off" required />
+              <p id="entry-message" class="status-message" aria-live="polite"></p>
+              <button class="primary-btn" type="submit">Continue</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="pass-screen" class="screen" aria-labelledby="pass-title">
+          <div class="screen-card centered-card">
+            <h2 id="pass-title">Pass the device to the next player.</h2>
+            <p class="hero-text">Keep the secret safe until it is time to reveal it.</p>
+            <button id="ready-btn" class="primary-btn" type="button">Ready</button>
+          </div>
+        </section>
+
+        <section id="shuffle-screen" class="screen" aria-labelledby="shuffle-title">
+          <div class="screen-card centered-card">
+            <h2 id="shuffle-title">Everyone has entered their secret.</h2>
+            <p class="hero-text">The entries will now be shuffled and revealed one at a time.</p>
+            <button id="shuffle-btn" class="primary-btn" type="button">Shuffle &amp; Begin</button>
+          </div>
+        </section>
+
+        <section id="reveal-screen" class="screen" aria-labelledby="reveal-title">
+          <div class="screen-card centered-card reveal-card">
+            <p id="reveal-progress" class="eyebrow">1 of 1</p>
+            <h2 id="reveal-title">Reveal</h2>
+            <div id="reveal-text" class="revealed-name">—</div>
+            <button id="next-name-btn" class="primary-btn" type="button">Next Name</button>
+          </div>
+        </section>
+
+        <section id="end-screen" class="screen" aria-labelledby="end-title">
+          <div class="screen-card centered-card">
+            <h2 id="end-title">All names have been revealed.</h2>
+            <p class="hero-text">The game is complete. Start again whenever you are ready.</p>
+            <button id="play-again-btn" class="primary-btn" type="button">Play Again</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
