@@ -51,13 +51,13 @@ body::after {
 }
 
 body::before {
-  background: linear-gradient(120deg, rgba(82, 167, 255, 0.12), transparent 55%);
-  animation: drift 18s ease-in-out infinite alternate;
+  background: radial-gradient(circle at 20% 20%, rgba(82, 167, 255, 0.15), transparent 45%);
+  animation: drift 24s ease-in-out infinite alternate;
 }
 
 body::after {
-  background: linear-gradient(320deg, rgba(30, 107, 255, 0.16), transparent 50%);
-  animation: drift 22s ease-in-out infinite alternate-reverse;
+  background: radial-gradient(circle at 80% 80%, rgba(30, 107, 255, 0.1), transparent 38%);
+  animation: drift 30s ease-in-out infinite alternate-reverse;
 }
 
 .background-glow {
@@ -325,10 +325,10 @@ input:focus {
 
 @keyframes drift {
   from {
-    transform: translateX(-4%) translateY(0);
+    transform: translate3d(-2%, -1%, 0) scale(1);
   }
   to {
-    transform: translateX(4%) translateY(2%);
+    transform: translate3d(2%, 1.5%, 0) scale(1.03);
   }
 }
 
