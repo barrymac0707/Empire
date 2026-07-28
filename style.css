@@ -95,14 +95,13 @@ body::after {
 .app-shell {
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: min(100%, 34rem);
   min-height: 100vh;
   min-height: 100dvh;
-  min-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: max(1rem, env(safe-area-inset-top)) 1rem max(1rem, env(safe-area-inset-bottom));
+  padding: 1rem;
 }
 
 .app-card {
