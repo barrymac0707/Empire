@@ -31,7 +31,9 @@ body {
 }
 
 html {
+  background-color: #040b18;
   background: radial-gradient(circle at top left, var(--bg-mid), var(--bg-deep) 40%, var(--bg-bright) 100%);
+  background-attachment: fixed;
 }
 
 body {
